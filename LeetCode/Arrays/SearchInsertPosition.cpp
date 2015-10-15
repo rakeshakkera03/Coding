@@ -10,9 +10,7 @@ Here are few examples.
 [1,3,5,6], 0 → 0
 */
 
-class Solution {
-public:
-    int searchInsert(vector<int>& nums, int target) {
+int searchInsert(vector<int>& nums, int target) {
         
         int size = nums.size();
         
@@ -44,4 +42,3 @@ public:
         else
             return search( nums, target, mid + 1, high);
     }
-};
